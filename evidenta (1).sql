@@ -56,19 +56,19 @@ INSERT INTO `evidenta` (`Nume`, `Prenume`, `Nr. Legitimatie`, `Media generala`, 
 
 
 //afisarea studentilor care au o disciplina nepromovata
-SELECT * FROM `evidenta` WHERE `Nota obtinuta` < 5
+SELECT * FROM `evidenta` WHERE `Nota obtinuta` < 5;
 
 //raport care cuprine nume, prenume, nr. legitimatie, an de studiu
-SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `An de studiu` FROM `evidenta` WHERE 1
+SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `An de studiu` FROM `evidenta`;
 
 //raport detaliat ordonat dupa nume
-SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `Nume` ASC
+SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `Nume` ASC;
 //raport detaliat ordonat dupa prenume
-SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `Prenume` ASC
+SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `Prenume` ASC;
 //raport detaliat ordonat dupa an de studiu
-SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `An de studiu` ASC
+SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `An de studiu` ASC;
 //raport detaliat ordonat dupa disciplina
-SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `Disciplina` ASC
+SELECT `Nume`, `Prenume`, `Nr. Legitimatie`, `Disciplina`, `Nota obtinuta` FROM `evidenta` WHERE `Nota obtinuta` >= 5 ORDER BY `Disciplina` ASC;
 
 //untrigger care calculeaza media pe anul respectiv
 
